@@ -194,3 +194,46 @@ Built with a focus on trust, speed, and fraud resilience.
 ## License
 
 Add your license here.
+
+---
+
+## Quickstart (Dummy Working Project)
+
+This repo includes a minimal FastAPI service that exposes a risk-scoring endpoint and a sample payload.
+
+### Run Locally
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+### Test the API
+
+```bash
+curl -s http://127.0.0.1:8000/health
+```
+
+```bash
+curl -s http://127.0.0.1:8000/claims/score \
+  -H "Content-Type: application/json" \
+  -d @data/sample_claim.json
+```
+
+### Output
+
+Response includes `risk_score`, `risk_band`, and model factor breakdown.
+
+---
+
+## UI Demo
+
+After starting the server, open:
+
+```
+http://127.0.0.1:8000/
+```
+
+You’ll see a lightweight web UI to paste a claim payload and score it.

@@ -1,0 +1,20 @@
+{
+  "claim_id": "CLM-001",
+  "user_id": "USR-42",
+  "gps": [
+    {"lat": 12.9716, "lon": 77.5946, "ts": "2026-03-20T10:00:00Z"},
+    {"lat": 12.9720, "lon": 77.5950, "ts": "2026-03-20T10:00:10Z"},
+    {"lat": 12.9800, "lon": 77.6000, "ts": "2026-03-20T10:00:15Z"}
+  ],
+  "device": {
+    "device_id": "DEV-9",
+    "os": "Android",
+    "model": "Pixel 7",
+    "emulator": false
+  },
+  "sensors": [
+    {"accel": 1.2, "gyro": 0.2, "ts": "2026-03-20T10:00:01Z"},
+    {"accel": 25.0, "gyro": 11.0, "ts": "2026-03-20T10:00:03Z"}
+  ],
+  "weather": "rain"
+}
